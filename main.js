@@ -1,5 +1,6 @@
 const containerDiv = document.querySelector(".container");
 const promptButton = document.querySelector(".promptButton");
+const resetButton = document.querySelector(".resetButton");
 const INITIAL_CELL_NUMBER = 16;
 
 const cellDivArray = [];
@@ -17,6 +18,11 @@ function generateGrid(cellNumber){
         }
 }
 
+resetButton.addEventListener("click", () => {
+    const cells = document.querySelectorAll(".cell");
+    cells.forEach((cell) => cell.remove());
+    generateGrid(INITIAL_CELL_NUMBER);
+});
 
 
 promptButton.addEventListener("click", () =>{ 
