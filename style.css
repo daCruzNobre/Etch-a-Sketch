@@ -5,11 +5,8 @@
     height: 100%;
 }
 
-div{                                    
-    /* border: 1px solid red; */
-}
-
 .container{
+    border: 2px outset rgb(211, 211, 181);
     margin-top: 15px;
     display: flex;
     flex-wrap: wrap;
@@ -20,7 +17,7 @@ div{
 
 .cell {
     
-    background-color: black;
+    background-color: beige;
     height: auto;
     width: auto;
     flex: 1 1 6.25%;
